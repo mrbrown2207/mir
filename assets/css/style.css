@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:100,300,400,500,600,700|Questrial|Shadows+Into+Light|Roboto:100,300,400,500,700");
+
+/***************************** Nav Styles *****************************/
+.navDefault {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /*background-color: #4a4a4f;*/
+    background-color: #666666;
+}
+
+button {
+    border: none;
+    /*background-color: #4a4a4f;*/ /* Same as the nav bar */
+    background-color: #666666;
+    width: 150px;
+    height: 50px;
+    color: #fff; /* Text color is white */
+    text-transform: uppercase;
+    cursor: pointer; /* This is like a hand */
+}
+
+.dropdownMenu {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    /*
+        This means it will below all the other elements. We have not
+        set any of the other elements so they will have a z-index of auto
+        which would be zero and greater than -1. NOTE: all the hover CSS
+        is for the menu itself, not the button! It is an illusion that
+        we actually are hovering our mouse over the button and making
+        the menu drop down.
+    */
+    z-index: -1;
+    width: 150px;
+    text-align: center;
+    
+    /*box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);*/
+    /* When I put this in, it moved the menu completely up -- you could not see the button */
+    transform: translateY(-100%); /* Will move it in reverse (up) */
+    transition: transform .5s ease-in-out;
+}
+
+.dropdownLink {
+    text-decoration: none;
+    display: block;
+    background-color: #f9f9f9; /* Off white */
+    color: #4a4a4f;
+    padding: 10px 5px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+.dropdownLink:hover {
+    color: #fff;
+    background-color: #a0a0a3; 
+    text-decoration: none;
+}
+
+.dropdown {
+    width: 150px; /* Same as button */
+    position: relative;
+}
+
+.dropdown:hover button {
+    /*background-color: #018ec5;*/
+}
+
+.dropdown:hover .dropdownMenu {
+    /* Make the shadow appear only when it drops down.
+       The original code had it showing all the time */ 
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);
+    transform: translateY(0);
+}
+
+.nav-li {
+    font-family: "Questrial", sans-serif;
+    font-size: small;
+}
+
+#logo {
+    font-family: "Shadows Into Light", cursive;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+/***************************** Heading Styles *****************************/
+
+.bg-color-heading {
+    background-color: #a9a9a9;
+}
