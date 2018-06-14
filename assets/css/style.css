@@ -95,3 +95,20 @@ button {
 .bg-color-heading {
     background-color: #a9a9a9;
 }
+
+.name {
+    font-family: "Exo", sans-serif;
+    font-weight: 100;
+    font-size: 46px;
+    margin-top: 90px;
+    color: white;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: white;
+}
