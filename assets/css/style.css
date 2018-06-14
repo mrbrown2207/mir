@@ -2,23 +2,26 @@
 
 /***************************** Nav Styles *****************************/
 .navDefault {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     right: 0;
     left: 0;
     /*background-color: #4a4a4f;*/
     background-color: #666666;
+    height: 50px;
 }
 
 button {
     border: none;
     /*background-color: #4a4a4f;*/ /* Same as the nav bar */
     background-color: #666666;
-    width: 150px;
+    width: 125px;
     height: 50px;
     color: #fff; /* Text color is white */
     text-transform: uppercase;
     cursor: pointer; /* This is like a hand */
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .dropdownMenu {
@@ -38,7 +41,7 @@ button {
         the menu drop down.
     */
     z-index: -1;
-    width: 150px;
+    width: 125px;
     text-align: center;
     
     /*box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.2);*/
@@ -63,8 +66,8 @@ button {
 }
 
 .dropdown {
-    width: 150px; /* Same as button */
-    position: relative;
+    width: 125px; /* Same as button */
+    position: /*relative*/fixed;
 }
 
 .dropdown:hover button {
@@ -83,6 +86,11 @@ button {
     font-size: small;
 }
 
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 #logo {
     font-family: "Shadows Into Light", cursive;
     font-size: xx-large;
@@ -92,8 +100,13 @@ button {
 
 /***************************** Heading Styles *****************************/
 
-.bg-color-heading {
+.heading-box {
+    width: 100%;
+    height: 200px;
     background-color: #a9a9a9;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
 }
 
 .name {
