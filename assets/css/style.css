@@ -94,34 +94,163 @@ button {
 #logo {
     font-family: "Shadows Into Light", cursive;
     font-size: xx-large;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: none;
+    padding-left: 25px;
 }
 
 /***************************** Heading Styles *****************************/
-
 .heading-box {
     width: 100%;
-    height: 200px;
+    height: 410px;
     background-color: #a9a9a9;
     padding: 0;
     margin: 0;
     z-index: -1;
 }
 
-.name {
-    font-family: "Exo", sans-serif;
-    font-weight: 100;
-    font-size: 46px;
-    margin-top: 90px;
+.occassion-text {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-left: 25px;
     color: white;
 }
 
-.title {
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
-    font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 90px;
-    color: white;
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.heading-container {
+    position: relative;
+    height: 410px;
+}
+
+.heading-center {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.animated-words {
+    display: inline-block;
+}
+.animated-words span:nth-child(2) { 
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -ms-animation-delay: 3s; 
+    animation-delay: 3s; 
+    color: skyblue;
+}
+.animated-words span:nth-child(3) { 
+    -webkit-animation-delay: 6s; 
+    -moz-animation-delay: 6s;
+    -ms-animation-delay: 6s; 
+    animation-delay: 6s; 
+    color: skyblue; 
+}
+.animated-words span:nth-child(4) { 
+    -webkit-animation-delay: 9s; 
+    -moz-animation-delay: 9s;
+    -ms-animation-delay: 9s; 
+    animation-delay: 9s; 
+    color: skyblue;
+}
+.animated-words span:nth-child(5) { 
+    -webkit-animation-delay: 12s; 
+    -moz-animation-delay: 12s;
+    -ms-animation-delay: 12s; 
+    animation-delay: 12s; 
+    color: skyblue;
+}
+.animated-words span:nth-child(6) { 
+    -webkit-animation-delay: 15s; 
+    -moz-animation-delay: 15s;
+    -ms-animation-delay: 15s; 
+    animation-delay: 15s; 
+    color: skyblue;
+}
+.animated-words span:nth-child(7) { 
+    -webkit-animation-delay: 18s; 
+    -moz-animation-delay: 18s;
+    -ms-animation-delay: 18s; 
+    animation-delay: 18s; 
+    color: skyblue;
+}
+.animated-words span:nth-child(8) { 
+    -webkit-animation-delay: 21s; 
+    -moz-animation-delay: 21s;
+    -ms-animation-delay: 21s; 
+    animation-delay: 21s; 
+    color: skyblue;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  2% {
+  	opacity: 0;
+  }
+
+  5% {
+  	opacity: 1;
+  }
+
+  17% {
+  	opacity: 1;
+  }
+
+  20% {
+  	opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animated-words span {
+  /*font-size: 3.4rem;*/
+  position: absolute;
+
+  top: 19rem;
+  left: 25%;
+  
+  opacity: 0;
+  color: skyblue;
+  overflow: hidden;
+  -webkit-animation: fadeInOut 24s linear infinite 0s;
+  -moz-animation: fadeInOut 24s linear infinite 0s;
+  -ms-animation: fadeInOut 24s linear infinite 0s;
+  /*animation-delay: 3s;*/
+  /*animation-duration: 9s*/
+}
+
+/***************************** Image Styles *****************************/
+
+.img {
+    width: 490px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px outset pink;
+    margin-top: 30px;
+    border-radius: 6%;
+    /*padding: 1rem;*/ /* this puts a bit of space between the photo and the border */
+}
+
+.heading-hz-center-align {
+    text-align: center;
 }
